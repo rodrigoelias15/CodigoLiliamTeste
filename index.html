@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mercado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row gap-4 m-5">
+            <div class="col borda">
+                <h1 class="text-center">Funções</h1>
+                
+                <fieldset class="border p-3 rounded-3 my-4">
+                    <legend class="float-none w-auto px-3">
+                        Cadastrar Produto
+                    </legend>
+                    <form action="/adicionar-produto" method="POST" class="d-flex justify-content-around">
+                        <div class="form-group">
+                            <input type="text" class="form-control my-1" id="adicionar_produto" placeholder="Nome do produto">
+                            <input type="number" class="form-control my-1" id="preco_produto" placeholder="Preço do produto">
+                        </div>
+                        <button class="btn btn-success" type="submit">Adicionar</button>
+                    </form>
+                </fieldset>
+
+                <fieldset class="border p-3 rounded-3 my-4">
+                    <legend class="float-none w-auto px-3">
+                        Editar Produto
+                    </legend>
+                    <div class="align-items-center d-flex justify-content-around">
+                        <div class="d-flex gap-5">
+                            <input type="text" class="form-control my-1" id="editar_produto" placeholder="Novo Nome">
+                            <select class="form-select form-select-sm">
+                                <option selected>Produtos</option>
+                            </select>                        
+                        </div>
+                        <button class="btn btn-warning">Editar</button>
+                    </div>
+                </fieldset>
+            
+                <fieldset class="border p-3 rounded-3 my-4">
+                    <legend class="float-none w-auto px-3">
+                        Exluir Produto
+                    </legend>
+                    <div class="align-items-center d-flex justify-content-around">
+                        <div class="d-flex gap-5">
+                            <select class="form-select form-select-sm">
+                                <option selected>Produtos</option>
+                            </select>                        
+                        </div>
+                        <button class="btn btn-danger">Editar</button>
+                    </div>
+                </fieldset>
+
+                <fieldset class="border d-flex justify-content-center my-4 p-3 rounded-3">
+                    <legend class="float-none w-auto px-3">
+                        Exibir Produtos
+                    </legend>
+                    <button class="btn btn-primary">Exibir Produtos do Mercado</button>
+                </fieldset>
+            </div>
+
+            <div class="col borda">
+                <h1 class="text-center">Produtos do Mercado</h1>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .borda{
+            border: 1px black solid;
+            box-shadow: 4px 4px;
+        }
+    </style>
+
+  </body>
+</html>
